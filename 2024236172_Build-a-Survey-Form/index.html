@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Brew Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <main>
+        <header>
+            <h1 id="title">☕ The Daily Brew</h1>
+            <p id="description">Kongsi rasa kopi anda dan bantu kami jadi lebih baik!</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="input-section">
+                <label id="name-label" for="name">Nama Penuh</label>
+                <input type="text" id="name" placeholder="Masukkan nama anda" required>
+            </div>
+
+            <div class="input-section">
+                <label id="email-label" for="email">E-mel</label>
+                <input type="email" id="email" placeholder="contoh@kopi.com" required>
+            </div>
+
+            <div class="input-section">
+                <label id="number-label" for="number">Kekerapan Melawat (Seminggu)</label>
+                <input type="number" id="number" min="1" max="7" placeholder="1-7">
+            </div>
+
+            <div class="input-section">
+                <p>Apakah minuman kegemaran anda?</p>
+                <select id="dropdown" required>
+                    <option disabled selected value>Pilih menu...</option>
+                    <option value="latte">Caffè Latte</option>
+                    <option value="americano">Americano</option>
+                    <option value="matcha">Matcha Latte</option>
+                    <option value="other">Lain-lain</option>
+                </select>
+            </div>
+
+            <div class="input-section">
+                <p>Bila waktu biasa anda datang?</p>
+                <label class="radio-label">
+                    <input name="visit-time" value="pagi" type="radio" class="input-radio" checked> Pagi (Sarapan)
+                </label>
+                <label class="radio-label">
+                    <input name="visit-time" value="petang" type="radio" class="input-radio"> Petang (Tea Time)
+                </label>
+            </div>
+
+            <div class="input-section">
+                <p>Apa yang anda suka tentang cafe kami? <small>(Boleh pilih banyak)</small></p>
+                <label class="checkbox-label">
+                    <input name="features" value="wifi" type="checkbox" class="input-checkbox"> WiFi Laju
+                </label>
+                <label class="checkbox-label">
+                    <input name="features" value="ambience" type="checkbox" class="input-checkbox"> Suasana Selesa
+                </label>
+                <label class="checkbox-label">
+                    <input name="features" value="music" type="checkbox" class="input-checkbox"> Pilihan Muzik
+                </label>
+            </div>
+
+            <div class="input-section">
+                <p>Cadangan penambahbaikan:</p>
+                <textarea id="comments" name="user-feedback" placeholder="Tulis sesuatu di sini..."></textarea>
+            </div>
+
+            <button type="submit" id="submit">Hantar Maklum Balas</button>
+        </form>
+    </main>
+</body>
+</html>
