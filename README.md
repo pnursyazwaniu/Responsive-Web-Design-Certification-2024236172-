@@ -4,19 +4,14 @@ Matrics Number: 2024236172
 UiTM Kuala Terengganu 
 Bachelor of Computer Science and Mathematics (Mobile Computing CDCS270)
 
-Week 3:
-Build a Survey Form
+1. Build a Survey Form
 
-Week 4:
-Build a Tribute Page
+2.Build a Tribute Page
 
-Week 5:
-Build a Technical Documentation Page
+3.Build a Technical Documentation Page
 
-Week 6:
-Build a Product Landing Page
+4.Build a Product Landing Page
 
-Week 7:
-Build a Personal Portfolio
+5.Build a Personal Portfolio
 
 My Responsive Web Certification:
