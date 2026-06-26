@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Web Basics</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#HTML_Fundamentals">HTML Fundamentals</a></li>
+      <li><a class="nav-link" href="#CSS_Styling">CSS Styling</a></li>
+      <li><a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a></li>
+      <li><a class="nav-link" href="#Accessibility">Accessibility</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Welcome to the Web Basics documentation.</p>
+      <p>This guide covers the fundamental technologies needed to build a website.</p>
+      <ul>
+        <li>HTML for structure.</li>
+        <li>CSS for presentation.</li>
+        <li>JavaScript for interactivity.</li>
+      </ul>
+      <code>console.log('Welcome to Web Development!');</code>
+    </section>
+
+    <section class="main-section" id="HTML_Fundamentals">
+      <header>HTML Fundamentals</header>
+      <p>HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+      <p>Always use semantic elements to structure your content properly.</p>
+      <ul>
+        <li>Use <code>&lt;header&gt;</code> for the top section.</li>
+        <li>Use <code>&lt;main&gt;</code> for the primary content.</li>
+      </ul>
+      <code>&lt;div class="container"&gt;Hello World&lt;/div&gt;</code>
+    </section>
+
+    <section class="main-section" id="CSS_Styling">
+      <header>CSS Styling</header>
+      <p>Cascading Style Sheets (CSS) is used to style and layout web pages.</p>
+      <p>You can use CSS to alter the font, color, size, and spacing of your content.</p>
+      <code>
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+      </code>
+    </section>
+
+    <section class="main-section" id="JavaScript_Basics">
+      <header>JavaScript Basics</header>
+      <p>JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+      <p>It enables interactive web pages and is an essential part of web applications.</p>
+      <code>
+function greet(name) {
+  return "Hello, " + name;
+}
+      </code>
+    </section>
+
+    <section class="main-section" id="Accessibility">
+      <header>Accessibility</header>
+      <p>Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them.</p>
+      <p>Proper contrast, semantic tags, and ARIA roles are vital components.</p>
+      <code>&lt;button aria-label="Close menu"&gt;X&lt;/button&gt;</code>
+    </section>
+  </main>
+</body>
+</html>
