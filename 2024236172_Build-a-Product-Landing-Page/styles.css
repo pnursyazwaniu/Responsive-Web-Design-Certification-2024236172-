@@ -1,0 +1,103 @@
+/* Tetapan asas halaman */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* User Story 23 & 25: Navbar sentiasa di atas & menggunakan Flexbox */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  border-bottom: 2px solid #ccc;
+}
+
+#header-img {
+  height: 40px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #f1c40f;
+}
+
+/* Ruang supaya kandungan tidak tertutup oleh header tetap */
+main {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+section {
+  margin: 60px 0;
+}
+
+/* Tetapan input dan butang form */
+#form {
+  margin-top: 20px;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#submit:hover {
+  background-color: #d4ac0d;
+}
+
+/* Video responsif */
+#video {
+  max-width: 100%;
+  border: none;
+}
+
+/* User Story 24: Penggunaan Media Query untuk skrin kecil */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  #nav-bar {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  main {
+    margin-top: 150px; /* Jarak ekstra sebab header dah jadi tinggi */
+  }
+}
