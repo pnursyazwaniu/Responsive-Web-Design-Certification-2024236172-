@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Tahoma,sans-serif;
+    background:#fafafa;
+}
+
+/* Navbar */
+#navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    gap:30px;
+    padding:20px 40px;
+    background:#222;
+}
+
+#navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+#navbar a:hover{
+    color:gold;
+}
+
+/* Welcome */
+#welcome-section{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#2b2d42;
+    color:white;
+    text-align:center;
+}
+
+.intro h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.intro p{
+    font-size:22px;
+}
+
+/* Projects */
+#project-section{
+    padding:80px 40px;
+}
+
+#project-section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.project-tile{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #ddd;
+    text-align:center;
+}
+
+.project-tile:hover{
+    background:#edf2f4;
+}
+
+.project-tile a{
+    text-decoration:none;
+    color:#2b2d42;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:50px;
+}
+
+#profile-link{
+    background:#ef233c;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+#profile-link:hover{
+    background:#d90429;
+}
+
+/* Media Query */
+@media (max-width:768px){
+
+#navbar{
+    justify-content:center;
+    padding:15px;
+}
+
+.intro h1{
+    font-size:38px;
+}
+
+.projects{
+    grid-template-columns:1fr;
+}
+
+}
